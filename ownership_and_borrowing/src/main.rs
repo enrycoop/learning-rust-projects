@@ -11,7 +11,7 @@ fn main() {
     {
         println!("Interazione tra variabili e dati con Move.");
         let s1 = String::from("ciao");
-        let s2 = s1; // moved
+        let _s2 = s1; // moved
 
         // println!("{s1}, world!"); difatti questa riga non è valida
 
@@ -32,7 +32,7 @@ fn main() {
     {
         println!("Duplicare dati sullo stack.");
         let x = 5;
-        let y = x; // qui viene copiato il valore poichè piccolo e fisso
+        let _y = x; // qui viene copiato il valore poichè piccolo e fisso
         // Rust ha una annotazione speciale chiata trait "Copy" che possiamo appiccicare sui type
         // memorizzati nello stack. Se un type implementa il trait "Copy", le variabili che
         // lo utilizzano non si spostano, ma vengono semplicemente copiate.
