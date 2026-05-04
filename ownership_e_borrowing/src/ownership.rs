@@ -1,4 +1,7 @@
-fn main() {
+/* La ownership è un insieme di regole che disciplinano la gestione della memoria 
+da parte di un programma Rust.*/
+
+pub fn main() {
     {
         println!("Modifica della String, allocazione nello heap a runtime.");
         let mut s = String::from("ciao");
