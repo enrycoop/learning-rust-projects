@@ -6,4 +6,5 @@ fn main() {
     println!("Il valore di x è: {x}");
     x = 6;
     println!("Il valore di x è: {x}");
+    println!("Tre ore in secondi sono: {TRE_ORE_IN_SECONDI}");
 }
